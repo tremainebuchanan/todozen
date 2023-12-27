@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:todozen/features/tasks/models/task.dart';
 
 class TaskProvider extends ChangeNotifier {
-  final String url = "https://my-json-server.typicode.com/typicode/demo/posts";
+  final String url = "https://jsonplaceholder.typicode.com/posts/";
   List<Task> _tasks = [];
   int get count => _tasks.length;
   UnmodifiableListView<Task> get tasks => UnmodifiableListView(_tasks);
