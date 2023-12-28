@@ -24,6 +24,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
         title: Text("Tasks",
             style:
                 GoogleFonts.outfit(fontSize: 34, fontWeight: FontWeight.w500)),

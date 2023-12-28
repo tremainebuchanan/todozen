@@ -11,6 +11,7 @@ class AppShell extends StatefulWidget {
   State<AppShell> createState() => _AppShellState();
 }
 
+//TODO remove scaffold widget from tree
 class _AppShellState extends State<AppShell> {
   int currentPageIndex = 0;
   @override

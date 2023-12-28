@@ -6,18 +6,15 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(children: [
-          Row(
-            children: [
-              Text(
-                "Profile",
-                style: GoogleFonts.outfit(
-                    fontSize: 34, fontWeight: FontWeight.w500),
-              ),
-            ],
-          )
-        ]));
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: false,
+        title: Text(
+          "Profile",
+          style: GoogleFonts.outfit(fontSize: 34, fontWeight: FontWeight.w500),
+        ),
+      ),
+      body: const Center(),
+    );
   }
 }
